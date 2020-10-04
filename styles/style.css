@@ -1,0 +1,87 @@
+body {
+    background-color: #6f5ea5;
+}
+
+#header {
+  background-color: #e7deeb; 
+}
+
+#navbar {
+    font-family: 'Miriam Libre', sans-serif;
+    float: right;
+}
+
+#sidebar-right {
+    font-family: 'Miriam Libre', sans-serif;
+    float: right;
+    width: 250px;
+}
+
+#sidebar-left {
+    font-family: 'Miriam Libre', sans-serif;
+    float: left;
+}
+
+.sb-card {
+    background-color: #ffffff;
+    width: relative;
+    height: relative;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.99);
+}
+
+.sb-card ul {
+    list-style: none;
+}
+
+
+.container {
+    padding: 10px;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 50%;
+    height: relative;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.99);
+    border-top-right-radius: 30%;
+}
+
+.user-img {
+    float: right;
+}
+
+.user-img img {
+    border-radius: 50%;
+}
+
+
+.card-title {
+    position: relative;
+}
+
+.card-header {
+    font-size: 16px;
+    font-family: 'Miriam Libre', sans-serif;
+    font-weight: bold;
+}
+
+.card-txt {
+    background-color: #ffffff;
+    font-family: 'Miriam Libre', sans-serif;
+    width: 100%;
+    height: 80%;
+}
+
+.card-footer {
+    padding: 5px;
+    margin: none;
+}
+
+.card-footer .date {
+    float: right;
+    font-family: 'Miriam Libre', sans-serif;
+}
