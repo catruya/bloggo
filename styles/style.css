@@ -6,20 +6,12 @@ body {
   background-color: #e7deeb; 
 }
 
-#navbar {
-    font-family: 'Miriam Libre', sans-serif;
-    float: right;
-}
 
-#sidebar-right {
-    font-family: 'Miriam Libre', sans-serif;
-    float: right;
-    width: 250px;
-}
-
-#sidebar-left {
+#sidebar {
     font-family: 'Miriam Libre', sans-serif;
     float: left;
+    position: fixed;
+    width: 250px;
 }
 
 .sb-card {
