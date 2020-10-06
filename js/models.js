@@ -47,6 +47,33 @@ class Post {
     }
 }
 
+/**
+ * User class
+ * Purpose: defines a user object.
+ */
+
+class User {
+    constructor(name, profileImage, aboutText) {
+        this.name = name;
+        this.profileImage = profileImage;
+        this.aboutText = aboutText;
+    }
+
+    getName() {
+        return this.name;
+    }
+
+    getProfileImage() {
+        return this.profileImage;
+    }
+
+    getAboutText() {
+        return this.aboutText;
+    }
+}
+
+export {Post, User};
+
 // Testing adding a post
 // const content = document.querySelector('#main');
 
