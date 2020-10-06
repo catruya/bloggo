@@ -38,13 +38,15 @@ body {
     height: relative;
     margin: auto;
     padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.99);
-    border-top-right-radius: 40%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.99);
+    border-radius: 2%;
 }
 
 .user-img {
     border-radius: 50%;
     float: right;
+    display: block;
+    position: relative;
 }
 
 
