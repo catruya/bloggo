@@ -4,4 +4,4 @@
  * @description contains the logic for handling site users
  */
 
-import User from './models'
+import User from './models';
