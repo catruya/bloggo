@@ -6,7 +6,7 @@
  */
 //--------------------------------------------------
 /** 
-*   TO DO: 
+*   @todo 
 * 1. Make a Post object to hold data about posts
 * 2. Come up with a way to store posts on the server
 * 3. Make a User object to hold data about users

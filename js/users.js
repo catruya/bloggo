@@ -5,3 +5,8 @@
  */
 
 import User from './models';
+
+/**
+ * @todo Make logic for user registration, login/out, 
+ * and profile updating
+ */
