@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bloggo</title>
     <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- My styles-->
     <link rel="stylesheet" href="styles/style.css">
     <!--Google fonts-->
@@ -19,7 +20,7 @@
             <a href="create-post.html">New Post</a>
             <a href="index.html">Home</a>
         </div> -->
-        
+
     </div>
 
     <!--sidebar-->
@@ -42,55 +43,42 @@
 
     <div id="main">
         <!--Cards will be inserted with JS-->
-        <div class="container">
+        <div class="container-fluid">
             <div class="card">
-                <div class="user-img">
-                    <img src="img/cat1.jpg" alt="test">
-                </div>
-                <div class="card-header">
-                    <div class="card-title">
-                        <h1>Card Title</h1>
+                <div class="row">
+                    <div class="col card-hdr">
+                        <h1>Post Title</h1>
+                        <hr>
+                        <h4>@demoncatcode</h4>
                     </div>
-                    <div class="username">
-                        <h4><a href="#"><em>@demoncatcode</em></a></h4>
+                    <div class="col">
+                        <img class="user-img img-responsive" src="img/cat1.jpg">
                     </div>
-                    <hr>
                 </div>
-                <div class="card-txt">
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                        ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident,
-                        sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <hr>
-                </div>
-                <div class="card-footer">
-                    <div class="date">
-                        October 04, 2020 1:30 PM
+                <div class="row">
+                    <div class="col card-txt">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                            ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                            in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
                     </div>
-                    <div class="like-cmt-share">
-                        <button>Like</button>
-                        <button>Comment</button>
-                        <button>Share</button>
+                </div>
+                <div class="row card-footer">
+                    <div class="col">
+                        <button class="btn-primary">Like</button>
+                        <button class="btn-primary">ReBlog</button>
+                    </div>
+                    <div class="col date">
+                        October 04, 2020 2:30 PM
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 
 </body>
