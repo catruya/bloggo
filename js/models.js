@@ -22,6 +22,8 @@
  * A post has a title, text, and a date which it was posted.
  */
 
+export {Post, User};
+
 class Post {
     constructor(user, title, text, datePosted) {
         this.user = user;
@@ -71,8 +73,6 @@ class User {
         return this.aboutText;
     }
 }
-
-export {Post, User};
 
 // Testing adding a post
 // const content = document.querySelector('#main');
