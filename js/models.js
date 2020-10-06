@@ -22,7 +22,7 @@
  * A post has a title, text, and a date which it was posted.
  */
 
-export {Post, User};
+export {Post, User, View};
 
 class Post {
     constructor(user, title, text, datePosted) {
@@ -71,6 +71,20 @@ class User {
 
     getAboutText() {
         return this.aboutText;
+    }
+}
+
+/**
+ * @todo View class
+ * the View class should be used to 
+ * maintain views (defined as pages/content that
+ * serves a particular function to the user).
+ * For example, a Create Post View or a User login view
+ */
+class View {
+    constructor(name, type) {
+        this.name = name;
+        this.type = type;
     }
 }
 
