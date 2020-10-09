@@ -26,7 +26,7 @@ const fs = require('fs');
 function datePosted() {
     const date = new Date(Date.now());
     let day = date.getDate();
-    let month = date.getMonth();
+    let month = date.getMonth() + 1;
     let year = date.getFullYear();
     let hour = date.getHours();
     let minutes = date.getMinutes();
@@ -53,8 +53,6 @@ function insertPost(user, title, text) {
 
     console.log('Inserted post in POSTS in DB.');
 
-    database.end();
-
 
 }
 
@@ -76,14 +74,13 @@ function writePosts() {
             posts.push(new model.Post(result.id, result.user, result.title, result.text, result.date_posted));
         });
 
-        fs.writeFile('./js/client/data/posts.json', JSON.stringify(posts), err => {
+        fs.writeFile('../client/data/posts.json', JSON.stringify(posts), err => {
             if (err) throw err;
             console.log('File written successfully');
         });
 
 
     });
-    database.end();
 
     // console.log(posts);
 }
