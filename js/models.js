@@ -22,8 +22,6 @@
  * A post has a title, text, and a date which it was posted.
  */
 
-export {Post, User, View};
-
 class Post {
     constructor(user, title, text, datePosted) {
         this.user = user;
@@ -144,5 +142,5 @@ class View {
 //     container.setAttribute('class', 'container');
 // }
 
-
+export {Post, User, View};
 
