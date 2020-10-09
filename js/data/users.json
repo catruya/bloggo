@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "username": "demoncatcode",
+        "image": "./img/cat1.jpg",
+        "about": "Hi! I'm Cat. I love code and books!"
+    },
+
+    {
+        "id": 2,
+        "username": "test_user",
+        "image": "./img/test.jpg",
+        "about": "Lorem ipsum dolor..."
+    }
+
+
+]

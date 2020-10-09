@@ -22,10 +22,8 @@
  * A post has a title, text, and a date which it was posted.
  */
 
-export {Post, User};
-
 class Post {
-    constructor(user, title, text, datePosted) {
+    constructor(id, user, title, text, datePosted) {
         this.user = user;
         this.title = title;
         this.text = text;
@@ -71,6 +69,20 @@ class User {
 
     getAboutText() {
         return this.aboutText;
+    }
+}
+
+/**
+ * @todo View class
+ * the View class should be used to 
+ * maintain views (defined as pages/content that
+ * serves a particular function to the user).
+ * For example, a Create Post View or a User login view
+ */
+class View {
+    constructor(name, type) {
+        this.name = name;
+        this.type = type;
     }
 }
 
@@ -130,5 +142,5 @@ class User {
 //     container.setAttribute('class', 'container');
 // }
 
-
+export {Post, User, View};
 

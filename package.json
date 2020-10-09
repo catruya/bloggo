@@ -1,0 +1,23 @@
+{
+  "name": "bloggo",
+  "version": "1.0.0",
+  "description": "A Tumblr clone",
+  "main": "js/app.js",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/catruya/bloggo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/catruya/bloggo/issues"
+  },
+  "homepage": "https://github.com/catruya/bloggo#readme"
+}
