@@ -10,6 +10,7 @@ const database = require('./database.js');
     if (err) {
         return console.error(`Error: ${err.message}`);
     }
+    
     // Create the POSTS table
     let createPostTable = `
         CREATE TABLE IF NOT EXISTS POSTS (
@@ -26,6 +27,23 @@ const database = require('./database.js');
         }
 
         console.log('Created POSTS table successfully');
+    });
+
+    // Create USERS table
+    let createUsersTable = `
+    CREATE TABLE IF NOT EXISTS USERS (
+        id INT PRIMARY KEY AUTO_INCREMENT,
+        username VARCHAR(255) NOT NULL,
+        image_url VARCHAR(255),
+        about_text VARCHAR(5000)
+    )`;
+
+    database.query(createUsersTable, (err, results, fields) => {
+        if (err) {
+            console.log(err.message);
+        } 
+
+        console.log('Created USERS table successfully');
     });
 
     database.end(err => {
