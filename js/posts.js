@@ -5,6 +5,8 @@
  */
 
 const database = require('./database.js');
+const model = require('./models.js')
+const fs = require('fs');
 
 
 /**
@@ -32,14 +34,14 @@ function datePosted() {
     return `${year}-${month}-${day} ${hour}:${minutes}:${seconds}`;
 }
 
- /**
-  * @function createPost 
-  * Creates a Bloggo post - stores in database
-  */
-function createPost(user, title, text) {
+/**
+ * @function insertPost 
+ * Creates a Bloggo post - stores in database
+ */
+function insertPost(user, title, text) {
     // Creates a new post object
-    //let post = new model.Post(user, title, text, Date.now());
-    
+    // let post = new model.Post(user, title, text, Date.now());
+
     // Insert post into POSTS in database
     let sql = `
         INSERT INTO POSTS (user, title, text, date_posted)
@@ -48,10 +50,42 @@ function createPost(user, title, text) {
 
     database.query(sql);
 
-    console.log('Inserted post.');
+    console.log('Inserted post in POSTS in DB.');
 
     database.end();
-    
+
+
 }
 
-module.exports = {createPost};
+/**
+ * @function writePosts
+ * Puts the posts in JSON file - ./js/data/posts.json
+ * This allows for easy use with the DOM
+ */
+function writePosts() {
+    let posts = [];
+
+    let sql = `SELECT * FROM POSTS`;
+    database.query(sql, (err, results, fields) => {
+        if (err) {
+            return console.log(err.message);
+        }
+
+        results.forEach(result => {
+            posts.push(new model.Post(result.id, result.user, result.title, result.text, result.date_posted));
+        });
+
+        let jsonPosts = JSON.stringify(posts);
+        fs.writeFile('./js/data/posts.json', jsonPosts, 'utf8', err => {
+            if (err) throw err;
+        });
+
+        console.log(posts);
+
+    });
+    database.end();
+}
+
+
+
+module.exports = { insertPost, writePosts };

@@ -1,0 +1,20 @@
+[
+    {
+        "user": "Test",
+        "title": "Test",
+        "text": "Test",
+        "datePosted": "1970-01-01T00:00:00.000Z"
+    },
+    {
+        "user": "Test",
+        "title": "Test",
+        "text": "Test",
+        "datePosted": "2020-09-09T04:36:52.000Z"
+    },
+    {
+        "user": "Test 2",
+        "title": "Testing",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim\nveniam, quis nostrud exercitation ullamco laboris nisi ut aliquip\nex ea commodo consequat. Duis aute irure dolor in reprehenderit\nin voluptate velit esse cillum dolore eu fugiat nulla pariatur.\nExcepteur sint occaecat cupidatat non proident,\nsunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "datePosted": "2020-09-09T04:39:53.000Z"
+    }
+]

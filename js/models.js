@@ -142,5 +142,5 @@ class View {
 //     container.setAttribute('class', 'container');
 // }
 
-export {Post, User, View};
+module.exports = {Post, User, View};
 
