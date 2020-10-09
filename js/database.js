@@ -5,13 +5,15 @@
  */
 const mysql = require('mysql');
 
-export const connection = mysql.createConnection({
+const connection = mysql.createConnection({
     host: "localhost",
     user: "admin",
     password: "password",
     database: "bloggo",
     insecureAuth: true
 });
+
+module.exports = connection;
 
 // // Connect to the database
 // connection.connect(err => {

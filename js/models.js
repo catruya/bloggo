@@ -23,7 +23,7 @@
  */
 
 class Post {
-    constructor(user, title, text, datePosted) {
+    constructor(id, user, title, text, datePosted) {
         this.user = user;
         this.title = title;
         this.text = text;
